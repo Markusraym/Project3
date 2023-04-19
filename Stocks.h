@@ -10,9 +10,14 @@ using namespace std;
 
 struct StockInfo {
 
-    std::string symbol;
-    double price;
-    int quantity;
+    string symbol;
+    double open;
+    double high;
+    double low;
+    double close;
+    long long int volume;
+    double dividends;
+    // Add additional members as needed
     std::map<std::string, StockInfo> stockList;
 
     void LoadStocks();
